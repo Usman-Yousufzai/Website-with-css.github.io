@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties Playground</title>
+    <style>
+        /* Your CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4285f4;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #ff6384;
+            margin: 20px auto;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #3367d6;
+        }
+
+        .image {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid #333;
+            margin-top: 20px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+
+        .animated {
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Properties Playground</h1>
+
+    <p>This is a sample web page where you can experiment with different CSS properties. Feel free to modify the styles in the &lt;style&gt; block above and see the changes in action!</p>
+
+    <div class="box center">
+        <p>Example Box</p>
+        <img class="image" src="https://via.placeholder.com/300x200" alt="Example Image">
+        <button class="btn">Click Me</button>
+    </div>
+
+    <div class="box center animated">
+        <p>Animated Box</p>
+    </div>
+</body>
+</html>
